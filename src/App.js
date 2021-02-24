@@ -21,15 +21,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {
-        token?(
-          <h1>I am Logged in!</h1>
-        ):(
-          <Login />
-        )
-      }
-      
-    <Login />
+      {token ? (<h1>I am Logged in</h1>):( <Login /> )}
     </div>
   );
 }
